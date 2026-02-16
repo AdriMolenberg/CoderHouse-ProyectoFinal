@@ -1,0 +1,30 @@
+.about-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    padding: 40px; 
+} 
+
+.form-flex { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+} 
+
+/* Animación del botón */ 
+input[type="submit"] { 
+    transition: background-color 0.3s ease, 
+    transform 0.2s ease; 
+    &:hover { 
+        transform: scale(1.05); 
+    } 
+} 
+
+/* Responsive */ 
+@media (max-width: 768px) { 
+    .about-grid { 
+        grid-template-columns: 1fr; 
+    } 
+} 
+
+ 

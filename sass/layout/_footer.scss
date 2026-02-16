@@ -1,0 +1,26 @@
+.site-footer { 
+ background-color: #222; 
+ color: #fff; 
+ padding: 2rem 0; 
+ 
+ .container { 
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   flex-wrap: wrap; 
+   gap: 1rem; 
+ } 
+ 
+ a { 
+   color: #fff; 
+   text-decoration: none; 
+ 
+   &:hover { 
+     color: cornflowerblue; 
+   } 
+ } 
+ 
+ p { 
+   margin: 0; 
+ } 
+}

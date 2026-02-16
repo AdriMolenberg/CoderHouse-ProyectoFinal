@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v; 
+ 
+html { 
+ font-family: v.$font-main; 
+} 
+ 
+body { 
+ background-color: v.$color-light; 
+}
+ 

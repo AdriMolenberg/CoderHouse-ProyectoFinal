@@ -1,0 +1,66 @@
+.catalog { 
+    background-image: url("../img/banner.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    display: grid; 
+    grid-template-columns: 1fr; 
+    padding: 2rem; 
+
+    /* Animación de entrada */ 
+    animation: fade-up 0.8s ease-out; 
+
+    /* Tabla del catálogo */ 
+    .table-responsive { 
+    max-width: 720px; // Ancho de la tabla
+    margin-left: 0;   // Alineada a la izquierda 
+    margin-right: auto; 
+    }
+
+    table { 
+        width: 100%;
+        border-collapse: collapse; 
+        background-color: rgba(255, 255, 255, 0.30); 
+
+        th, 
+        td { 
+        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.30);
+        padding: 0.75rem; 
+        } 
+
+        th { 
+            background-color: #ff8c00; 
+            color: white; 
+        } 
+
+        tr { 
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+    
+            &:hover { 
+                background-color: rgba(255, 140, 0, 0.08); 
+                transform: scale(0.99);
+            }
+        } 
+    } 
+} 
+
+/* Animación */ 
+@keyframes fade-up { 
+    from { 
+        opacity: 0; 
+        transform: translateY(15px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+
+/* Ajustar texto en mobile */
+@media (max-width: 576px) { 
+  .catalog table { 
+    font-size: 0.9rem; 
+  } 
+}
