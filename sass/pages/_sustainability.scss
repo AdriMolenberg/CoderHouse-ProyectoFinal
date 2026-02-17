@@ -1,0 +1,19 @@
+.sustainability {
+
+  section {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.03);
+  }
+}
